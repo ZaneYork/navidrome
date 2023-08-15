@@ -50,6 +50,7 @@ type configOptions struct {
 	AutoTranscodeDownload        bool
 	DefaultDownsamplingFormat    string
 	SearchFullString             bool
+	SearchHantWithHans           bool
 	RecentlyAddedByModTime       bool
 	IgnoredArticles              string
 	IndexGroups                  string
@@ -295,6 +296,7 @@ func init() {
 	viper.SetDefault("autotranscodedownload", false)
 	viper.SetDefault("defaultdownsamplingformat", consts.DefaultDownsamplingFormat)
 	viper.SetDefault("searchfullstring", false)
+	viper.SetDefault("searchhantwithhans", false)
 	viper.SetDefault("recentlyaddedbymodtime", false)
 	viper.SetDefault("ignoredarticles", "The El La Los Las Le Les Os As O A")
 	viper.SetDefault("indexgroups", "A B C D E F G H I J K L M N O P Q R S T U V W X-Z(XYZ) [Unknown]([)")
